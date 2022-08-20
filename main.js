@@ -52,7 +52,7 @@ if (isAdd) {
   // //Mat khau
    isValid &= validation.kiemTraRong(
      passwordInfo,
-     "errorPass",
+     "errorPassword",
      "(*)  Vui lòng nhập pass"
    )&& validation.kiemTraDoDaiKiTu(
     passwordInfo,
@@ -68,11 +68,11 @@ if (isAdd) {
    );
 
   // //Khoa Hoc
-  // isValid &= validation.checkChucVu(
-  //   "chucvu",
-  //   "errorKH",
-  //   "(*) Vui long chon KH!"
-  // );
+   isValid &= validation.checkChucVu(
+     "chucvu",
+     "errorChoosing",
+     "(*) Vui long chon KH!"
+   );
 
 
   if (!isValid) return null;
